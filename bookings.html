@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การจอง - ระบบจองโรงแรม</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="rooms.html">ข้อมูลห้อง</a></li>
+                <li><a href="employees.html">พนักงาน</a></li>
+                <li><a href="customers.html">ลูกค้า</a></li>
+                <li><a href="bookings.html">การจอง</a></li>
+                <li><a href="login.html">เข้าสู่ระบบ</a></li>
+                <li><a href="register.html">สมัครสมาชิก</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main >
+        <h1>จัดการการจอง</h1>
+        
+        <form id="booking-form">
+            <h2>เพิ่ม/แก้ไขการจอง</h2>
+            <input type="hidden" id="booking-id">
+            <label for="customer-name">ชื่อลูกค้า:</label>
+            <input type="text" id="customer-name" required>
+            <label for="room-number">หมายเลขห้อง:</label>
+            <input type="text" id="room-number" required>
+            <label for="check-in-date">วันที่เช็คอิน:</label>
+            <input type="date" id="check-in-date" required>
+            <label for="check-out-date">วันที่เช็คเอาท์:</label>
+            <input type="date" id="check-out-date" required>
+            <label for="total-price">ราคารวม:</label>
+            <input type="number" id="total-price" required>
+            <button type="submit">บันทึก</button>
+        </form>
+
+        <table id="booking-table">
+            <thead>
+                <tr>
+                    <th>ชื่อลูกค้า</th>
+                    <th>หมายเลขห้อง</th>
+                    <th>วันที่เช็คอิน</th>
+                    <th>วันที่เช็คเอาท์</th>
+                    <th>ราคารวม</th>
+                    <th>การดำเนินการ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- ข้อมูลการจองจะถูกเพิ่มที่นี่ด้วย JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ระบบจองโรงแรม. สงวนลิขสิทธิ์.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

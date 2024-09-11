@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลห้อง - ระบบจองโรงแรม</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="rooms.html">ข้อมูลห้อง</a></li>
+                <li><a href="employees.html">พนักงาน</a></li>
+                <li><a href="customers.html">ลูกค้า</a></li>
+                <li><a href="bookings.html">การจอง</a></li>
+                <li><a href="login.html">เข้าสู่ระบบ</a></li>
+                <li><a href="register.html">สมัครสมาชิก</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>จัดการข้อมูลห้อง</h1>
+        
+        <form id="room-form">
+            <h2>เพิ่ม/แก้ไขข้อมูลห้อง</h2>
+            <input type="hidden" id="room-id">
+            <label for="room-number">หมายเลขห้อง:</label>
+            <input type="text" id="room-number" required>
+            <label for="room-type">ประเภทห้อง:</label>
+            <select id="room-type" required>
+                <option value="standard">ห้องมาตรฐาน</option>
+                <option value="deluxe">ห้องดีลักซ์</option>
+                <option value="suite">ห้องสวีท</option>
+            </select>
+            <label for="room-price">ราคาต่อคืน:</label>
+            <input type="number" id="room-price" required>
+            <button type="submit">บันทึก</button>
+        </form>
+
+        <table id="room-table">
+            <thead>
+                <tr>
+                    <th>หมายเลขห้อง</th>
+                    <th>ประเภทห้อง</th>
+                    <th>ราคาต่อคืน</th>
+                    <th>การดำเนินการ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- ข้อมูลห้องจะถูกเพิ่มที่นี่ด้วย JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ระบบจองโรงแรม. สงวนลิขสิทธิ์.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

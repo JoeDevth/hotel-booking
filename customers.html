@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลูกค้า - ระบบจองโรงแรม</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="rooms.html">ข้อมูลห้อง</a></li>
+                <li><a href="employees.html">พนักงาน</a></li>
+                <li><a href="customers.html">ลูกค้า</a></li>
+                <li><a href="bookings.html">การจอง</a></li>
+                <li><a href="login.html">เข้าสู่ระบบ</a></li>
+                <li><a href="register.html">สมัครสมาชิก</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>จัดการข้อมูลลูกค้า</h1>
+        
+        <form id="customer-form">
+            <h2>เพิ่ม/แก้ไขข้อมูลลูกค้า</h2>
+            <input type="hidden" id="customer-id">
+            <label for="customer-name">ชื่อ-นามสกุล:</label>
+            <input type="text" id="customer-name" required>
+            <label for="customer-email">อีเมล:</label>
+            <input type="email" id="customer-email" required>
+            <label for="customer-phone">เบอร์โทรศัพท์:</label>
+            <input type="text" id="customer-phone" required>
+            <label for="customer-address">ที่อยู่:</label>
+            <textarea id="customer-address" required></textarea>
+            <button type="submit">บันทึก</button>
+        </form>
+
+        <table id="customer-table">
+            <thead>
+                <tr>
+                    <th>ชื่อ-นามสกุล</th>
+                    <th>อีเมล</th>
+                    <th>เบอร์โทรศัพท์</th>
+                    <th>ที่อยู่</th>
+                    <th>การดำเนินการ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- ข้อมูลลูกค้าจะถูกเพิ่มที่นี่ด้วย JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ระบบจองโรงแรม. สงวนลิขสิทธิ์.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
