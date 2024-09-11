@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_customer'])) {
     <header>
         <nav>
             <ul>
-                <li><a href="index.php">หน้าแรก</a></li>
+                <li><a href="index_login.php">หน้าแรก</a></li>
                 <li><a href="rooms.php">ข้อมูลห้อง</a></li>
                 <li><a href="employees.php">พนักงาน</a></li>
                 <li><a href="customers.php">ลูกค้า</a></li>

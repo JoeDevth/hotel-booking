@@ -1,3 +1,6 @@
+<?php 
+
+?>
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -10,13 +13,12 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="rooms.html">ข้อมูลห้อง</a></li>
-                <li><a href="employees.html">พนักงาน</a></li>
-                <li><a href="customers.html">ลูกค้า</a></li>
-                <li><a href="bookings.html">การจอง</a></li>
-                <li><a href="login.html">เข้าสู่ระบบ</a></li>
-                <li><a href="register.html">สมัครสมาชิก</a></li>
+                <li><a href="index_login.php">หน้าแรก</a></li>
+                <li><a href="rooms.php">ข้อมูลห้อง</a></li>
+                <li><a href="employees.php">พนักงาน</a></li>
+                <li><a href="customers.php">ลูกค้า</a></li>
+                <li><a href="bookings.php">การจอง</a></li>
+                <li><a href="login.php">ออกจากระบบ</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +27,7 @@
         <section class="hero">
             <h1>ยินดีต้อนรับสู่ระบบจองโรงแรม</h1>
             <p>ค้นหาและจองห้องพักที่ดีที่สุดสำหรับการเข้าพักของคุณ</p>
-            <a href="bookings.html" class="cta-button">จองเลย</a>
+            <a href="bookings.php" class="cta-button">จองเลย</a>
         </section>
 
         <section class="features">
@@ -47,7 +49,5 @@
     <footer>
         <p>&copy; 2024 ระบบจองโรงแรม. สงวนลิขสิทธิ์.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

@@ -73,13 +73,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_employee'])) {
     <header>
         <nav>
             <ul>
-                <li><a href="index.php">หน้าแรก</a></li>
+                <li><a href="index_login.php">หน้าแรก</a></li>
                 <li><a href="rooms.php">ข้อมูลห้อง</a></li>
                 <li><a href="employees.php">พนักงาน</a></li>
                 <li><a href="customers.php">ลูกค้า</a></li>
                 <li><a href="bookings.php">การจอง</a></li>
-                <li><a href="login.html">เข้าสู่ระบบ</a></li>
-                <li><a href="register.html">สมัครสมาชิก</a></li>
+                <li><a href="logout.php">ออกจากระบบ</a></li>
             </ul>
         </nav>
     </header>
